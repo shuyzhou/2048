@@ -58,6 +58,7 @@ var AppView = Backbone.View.extend({
     }
     this.startClientX = event.touches[0].clientX;
     this.startClientY = event.touches[0].clientY;
+    event.preventDefault();
   },
   touchend : function (event) {
     if(event.changedTouches.length > 1 || event.touches.length > 0 || event.targetTouches.length > 0) {
@@ -78,5 +79,6 @@ var AppView = Backbone.View.extend({
       dir = absDx > absDy ? (dx > 0 ? "right" : "left") : (dy > 0 ? "down" : "up");
       this.collection.refresh(dir);
     }
+    event.preventDefault();
   }
 });

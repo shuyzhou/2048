@@ -2,62 +2,91 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }
+}
 body {
 	color: #776e65;
 	font-family: "Microsoft Yahei", "Helvetica Neue", Arial, sans-serif;
 }
 #main-container {
-	width: 500px;
+	width: 16.7rem;
 	margin: 0 auto;
 }
 #header {
-	height: 165px;
+	height: 5.5rem;
 	position: relative;
 }
 #header .title {
-	font-size: 80px;
-	margin: 25px 0;
+	font-size: 2.7rem;
+	margin: 0.8rem 0;
 	position: absolute;
-	left: 20px;
+	left: 0.6rem;
 	font-family: "Microsoft Yahei", "Helvetica Neue", Arial, sans-serif;
 }
 #header .score-container{
-	width: 80px;
-	height: 60px;
+	width: 2.7rem;
+	height: 2rem;
 	background-color: #bbada0;
 	position: absolute;
-	border-radius: 5px;
+	border-radius: 0.17rem;
 	text-align: center;
-	line-height: 26px;
+	line-height: 0.87rem;
 	color:#ffffff;
-	top: 25px;
-	right: 40px;
+	top: 0.83rem;
+	right: 1.3rem;
+  font-size: 0.5rem;
 }
 #score {
-	font-size: 22px;
+	font-size: 0.7rem;
 }
 #header .restart {
-	right: 20px;
-	bottom: 20px;
+	right: 0.6rem;
+	bottom: 0.6rem;
 }
 .game-container {
-	height: 500px;
-	padding: 15px;
+	height: 16.7rem;
+	padding: 0.5rem;
 	box-sizing: border-box;
-	border-radius: 5px;
+	border-radius: 0.17rem;
 	background-color:#bbada0;
 	position: relative;
 }
 #game-message {
-	border-radius: 5px;
-	font-size: 75px;
+	border-radius: 0.17rem;
+	font-size: 2.5rem;
 	color:#ffffff;
 	text-align: center;
 	display: none;
 }
 #game-message .mask {
-	width: 500px;
-	height: 500px;
+	width: 16.7rem;
+	height: 16.7rem;
 	position: absolute;
 	top:0;
 	left: 0;
@@ -65,31 +94,31 @@ body {
 	opacity:0.4;
 }
 #game-message p {
-	width: 500px;
+	width: 16.7rem;
 	position: absolute;
-	top:65px;
+	top: 2.2rem;
 	left: 0;
 }
 #game-message .restart{
-	top:300px;
-	left: -62.5px;
-	margin-left: 250px;
+	top: 10rem;
+	left: -2.1rem;
+	margin-left: 8.3rem;
 }
 .restart {
-	width: 125px;
-    height: 36px;
-    line-height: 34px;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #f2b179;
-    border-width: 0;
-    border-radius: 3px;
-    font-family: "Microsoft Yahei", "Helvetica Neue", Arial, sans-serif;
+	width: 4.2rem;
+  height: 1.2rem;
+  line-height: 1.13rem;
+  font-size: 0.6rem;
+  color: #ffffff;
+  background-color: #f2b179;
+  border-width: 0;
+  border-radius: 0.1rem;
+  font-family: "Microsoft Yahei", "Helvetica Neue", Arial, sans-serif;
 	outline: none;
-    position: absolute;
+  position: absolute;
 }
 .grid-row {
-    margin-bottom: 15px;
+    margin-bottom: 0.5rem;
 }
 .grid-row:after {
 	display: table;
@@ -97,22 +126,22 @@ body {
 	clear: both;
 }                                                                                          
 .grid-cell,.grid-tile {
-    width: 106.25px;                                                                
-    height: 106.25px;
-    margin-right: 15px;
+    width: 3.54rem;                                                                
+    height: 3.54rem;
+    margin-right: 0.5rem;
     float: left;
-    border-radius: 3px;
+    border-radius: 0.1rem;
     background: rgba(238, 228, 218, 0.35);
 }
 .grid-cell:last-child {
     margin-right: 0;
 }
 .grid-tile {
-	line-height: 106.25px;
-	border-radius: 3px;
+	line-height: 3.54rem;
+	border-radius: 0.1rem;
   text-align: center;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 1.8rem;
 }
 #tile-container {
 	position: absolute;
@@ -121,42 +150,42 @@ body {
 }
 .cell-row-0 {
 	position: absolute;
-	top:15px;
+	top:0.5rem;
 }
 .cell-row-1 {
 	position: absolute;
-	top:136.25px;
+	top:4.54rem;
 }
 .cell-row-2 {
 	position: absolute;
-	top:257.5px;
+	top:8.58rem;
 }
 .cell-row-3 {
 	position: absolute;
-	top:378.75px;
+	top:12.62rem;
 }
 .cell-column-0 {
 	position: absolute;
-	left:15px;
+	left:0.5rem;
 }
 .cell-column-1 {
 	position: absolute;
-	left:136.25px;
+	left:4.54rem;
 }
 .cell-column-2 {
 	position: absolute;
-	left:257.5px;
+	left:8.58rem;
 }
 .cell-column-3 {
 	position: absolute;
-	left:378.75px;
+	left:12.62rem;
 }
 .tile-2 {
     background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    box-shadow: 0 0 1rem 0.33rem rgba(243, 215, 116, 0), inset 0 0 0 0.03rem rgba(255, 255, 255, 0); }
 .tile-4 {
     background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    box-shadow: 0 0 1rem 0.33rem rgba(243, 215, 116, 0), inset 0 0 0 0.03rem rgba(255, 255, 255, 0); }
 .tile-8 {
     color: #f9f6f2;
     background: #f2b179; }
@@ -172,27 +201,27 @@ body {
   .tile-128 {
     color: #f9f6f2;
     background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+    box-shadow: 0 0 1rem 0.33rem rgba(243, 215, 116, 0.2381), inset 0 0 0 0.03rem rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
   .tile-256 {
     color: #f9f6f2;
     background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    box-shadow: 0 0 1rem 0.33rem rgba(243, 215, 116, 0.31746), inset 0 0 0 0.03rem rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
   .tile-512 {
     color: #f9f6f2;
     background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    box-shadow: 0 0 1rem 0.33rem rgba(243, 215, 116, 0.39683), inset 0 0 0 0.03rem rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
   .tile-1024 {
     color: #f9f6f2;
     background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    box-shadow: 0 0 30px 0.33rem rgba(243, 215, 116, 0.47619), inset 0 0 0 0.03rem rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
   .tile-2048 {
     color: #f9f6f2;
     background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    box-shadow: 0 0 30px 0.33rem rgba(243, 215, 116, 0.55556), inset 0 0 0 0.03rem rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
  @keyframes appear {
   0% {
